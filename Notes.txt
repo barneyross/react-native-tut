@@ -1,0 +1,32 @@
+I, react-navigation
+1, Setup	
+	npm install --save react-navigation
+
+2, Usage
+import MainScreen from './MainScreen';
+import ProfileScreen from './ProfileScreen';
+import { StackNavigator } from 'react-navigation';
+const App = StackNavigator({
+	Main: {screen: MainScreen},
+	Profile: {screen: ProfileScreen},
+});
+...
+const {navigate} = this.props.navigation;
+<Button onPress={()=>navigate('Profile', {name: 'Jane'})} />
+
+3, Features.
+	- easy to override navigation login
+	- integrate with redux
+	- use Animated library
+
+
+II, Navigator
+	o implementation of a navigation stack.
+	o IOS + android and easy to customize.
+	o renderScene, configureScene, navigationBar.
+	
+
+III, NavigatorIOS
+
+IV, NavigationExperimental
+
